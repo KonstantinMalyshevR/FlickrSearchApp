@@ -1,0 +1,60 @@
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="110dp"
+    sothree:umanoShadowHeight="4dp">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/org_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/iv_ico"
+                android:layout_centerInParent="true" />
+
+            <ProgressBar
+                android:id="@+id/org_progress"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="5dp"
+
+            android:gravity="center_vertical"
+            android:textColor="@color/color_text"
+            android:textStyle="bold"
+            android:text="sd"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

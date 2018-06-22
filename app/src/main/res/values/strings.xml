@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TestApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contentDescription">Image</string>
+    <string name="search_button">Искать</string>
+    <string name="view_activity_label">Просмотр</string>
+    <string name="map_activity_label">Карта</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
