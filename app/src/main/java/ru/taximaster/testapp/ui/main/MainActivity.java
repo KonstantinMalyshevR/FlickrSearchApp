@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.editText) EditText editText;
     @BindView(R.id.viewPager) ViewPager viewPager;
 
-    MyPagerAdapter pagerAdapter;
+    MyPagerAdapter mPagerAdapter;
 
     public String search_text = "";
 
@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
-        pagerAdapter = new MyPagerAdapter(getSupportFragmentManager());
-        viewPager.setAdapter(pagerAdapter);
+        mPagerAdapter = new MyPagerAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(mPagerAdapter);
     }
 
     @Override
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.map_text)
     public void onMap_textClick(){
-        MainFragment f = pagerAdapter.getFragment(viewPager.getCurrentItem());
+        MainFragment f = mPagerAdapter.getFragment(viewPager.getCurrentItem());
         if(f != null && f.getList_objects() != null){
             List<PhotoMapClass> objects = f.getList_objects();
 
