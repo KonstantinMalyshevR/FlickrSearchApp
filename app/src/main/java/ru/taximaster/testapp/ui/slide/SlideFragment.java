@@ -1,4 +1,4 @@
-package ru.taximaster.testapp.views;
+package ru.taximaster.testapp.ui.slide;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -17,24 +17,24 @@ import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListene
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import ru.taximaster.testapp.R;
-import ru.taximaster.testapp.model.SupportClass;
+import ru.taximaster.testapp.util.SupportClass;
 
 /**
  * Created by Developer on 21.06.18.
  */
 
-public class ViewFragment extends Fragment {
+public class SlideFragment extends Fragment {
 
     protected ImageLoader imageLoader;
 
     @BindView(R.id.imageView) ImageView imageView;
     @BindView(R.id.progress) ProgressBar progress;
 
-    final static String PAGE_URL = "page_number";
+    final static String PAGE_URL = "page_url";
     String url = "";
 
-    public static ViewFragment getNewInstance(String url) {
-        ViewFragment gf = new ViewFragment();
+    public static SlideFragment getNewInstance(String url) {
+        SlideFragment gf = new SlideFragment();
         Bundle args = new Bundle();
         args.putString(PAGE_URL, url);
         gf.setArguments(args);

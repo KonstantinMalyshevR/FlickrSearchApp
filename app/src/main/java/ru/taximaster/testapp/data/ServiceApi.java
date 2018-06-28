@@ -1,4 +1,4 @@
-package ru.taximaster.testapp.retrofit;
+package ru.taximaster.testapp.data;
 
 /**
  * Created by Developer on 17.05.18.
@@ -7,6 +7,8 @@ package ru.taximaster.testapp.retrofit;
 import io.reactivex.Observable;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
+import ru.taximaster.testapp.data.pojo.FlickrResponse;
+import ru.taximaster.testapp.data.pojo.GeoResponse;
 
 public interface ServiceApi {
 

@@ -1,4 +1,4 @@
-package ru.taximaster.testapp.model;
+package ru.taximaster.testapp.util;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -19,7 +19,6 @@ import ru.taximaster.testapp.R;
 
 public class SupportClass {
 
-    public final static String BASE_URL = "https://api.flickr.com/";
     public final static String KEY = "6995ead0742e64add6246518afccc6c2";
 
     public final static int PAGE_COUNT = 5;

@@ -1,60 +1,71 @@
-<com.sothree.slidinguppanel.SlidingUpPanelLayout
-    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/sliding_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="bottom"
-    sothree:umanoPanelHeight="110dp"
-    sothree:umanoShadowHeight="4dp">
+    android:background="@color/color_white">
 
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
-    <LinearLayout
-        android:id="@+id/slider"
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="3dp"
+        android:background="@color/color_white" >
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp">
-
-            <ImageView
-                android:id="@+id/org_image"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:contentDescription="@string/contentDescription"
-                android:src="@drawable/iv_ico"
-                android:layout_centerInParent="true" />
-
-            <ProgressBar
-                android:id="@+id/org_progress"
-                style="?android:attr/progressBarStyleSmall"
-                android:layout_centerInParent="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:visibility="visible"/>
-        </RelativeLayout>
-
-        <TextView
-            android:id="@+id/name_text"
+        <LinearLayout
+            android:id="@+id/slider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:orientation="horizontal">
 
-            android:layout_margin="5dp"
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
 
-            android:gravity="center_vertical"
-            android:textColor="@color/color_text"
-            android:textStyle="bold"
-            android:text="sd"
-            android:textSize="20sp" />
+                <ImageView
+                    android:id="@+id/org_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/contentDescription"
+                    android:src="@drawable/iv_ico"
+                    android:layout_centerInParent="true" />
 
-    </LinearLayout>
+                <ProgressBar
+                    android:id="@+id/org_progress"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"/>
+            </RelativeLayout>
 
-</com.sothree.slidinguppanel.SlidingUpPanelLayout>
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="5dp"
+
+                android:gravity="center_vertical"
+                android:textColor="@color/color_text"
+                android:textStyle="bold"
+                android:text="sd"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/progress"
+        android:top="16dp"
+        android:bottom="16dp">
+
+        <layer-list>
+
+            <item>
+                <rotate
+                    android:fromDegrees="45"
+                    android:pivotX="50%"
+                    android:pivotY="50%"
+                    android:toDegrees="315">
+                    <shape android:shape="line">
+                        <size
+                            android:width="60dp"
+                            android:height="60dp" />
+                        <stroke
+                            android:width="4dp"
+                            android:color="#696074" />
+                    </shape>
+                </rotate>
+            </item>
+            <item>
+                <rotate
+                    android:fromDegrees="135"
+                    android:pivotX="50%"
+                    android:pivotY="50%"
+                    android:toDegrees="405">
+                    <shape android:shape="line">
+                        <size
+                            android:width="60dp"
+                            android:height="60dp" />
+                        <stroke
+                            android:width="4dp"
+                            android:color="#696074" />
+                    </shape>
+                </rotate>
+            </item>
+
+            <item>
+                <rotate
+                    android:fromDegrees="270"
+                    android:pivotX="50%"
+                    android:pivotY="50%"
+                    android:toDegrees="0">
+                    <shape android:shape="line">
+                        <size
+                            android:width="60dp"
+                            android:height="60dp" />
+                        <stroke
+                            android:width="4dp"
+                            android:color="#589dca" />
+                    </shape>
+                </rotate>
+            </item>
+            <item>
+                <rotate
+                    android:fromDegrees="360"
+                    android:pivotX="50%"
+                    android:pivotY="50%"
+                    android:toDegrees="90">
+                    <shape android:shape="line">
+                        <size
+                            android:width="60dp"
+                            android:height="60dp" />
+                        <stroke
+                            android:width="4dp"
+                            android:color="#589dca" />
+                    </shape>
+                </rotate>
+            </item>
+
+            <item>
+                <bitmap android:src="@drawable/tax"/>
+            </item>
+
+            <!--<item>-->
+                <!--<shape android:shape="oval">-->
+                    <!--<size-->
+                        <!--android:width="60dp"-->
+                        <!--android:height="60dp" />-->
+                    <!--<stroke-->
+                        <!--android:width="4dp"-->
+                        <!--android:color="#212021" />-->
+                <!--</shape>-->
+            <!--</item>-->
+        </layer-list>
+    </item>
+</layer-list>

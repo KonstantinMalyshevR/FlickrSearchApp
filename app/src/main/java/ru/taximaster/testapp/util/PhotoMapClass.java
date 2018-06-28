@@ -1,4 +1,4 @@
-package ru.taximaster.testapp.model;
+package ru.taximaster.testapp.util;
 
 import com.google.android.gms.maps.model.LatLng;
 

@@ -11,12 +11,11 @@
         android:layout_height="match_parent"
         android:padding="5dp"/>
 
-    <ImageView
+    <ProgressBar
         android:id="@+id/progess_anim"
         android:layout_width="wrap_content"
-        android:layout_height="20dp"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:src="@drawable/tax"
-        android:contentDescription="@string/contentDescription" />
+        style="@style/MyProgressBar" />
 
 </RelativeLayout>

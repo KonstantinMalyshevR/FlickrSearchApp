@@ -1,4 +1,4 @@
-package ru.taximaster.testapp.model;
+package ru.taximaster.testapp;
 
 import android.content.Context;
 

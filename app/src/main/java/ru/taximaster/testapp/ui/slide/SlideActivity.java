@@ -1,4 +1,4 @@
-package ru.taximaster.testapp.views;
+package ru.taximaster.testapp.ui.slide;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,14 +17,14 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import ru.taximaster.testapp.R;
-import ru.taximaster.testapp.model.PhotoMapClassList;
-import ru.taximaster.testapp.model.PhotoMapClass;
+import ru.taximaster.testapp.util.PhotoMapClassList;
+import ru.taximaster.testapp.util.PhotoMapClass;
 
 /**
  * Created by Developer on 21.06.18.
  */
 
-public class ViewActivity extends AppCompatActivity {
+public class SlideActivity extends AppCompatActivity {
 
     @BindView(R.id.viewPager) ViewPager viewPager;
 
@@ -73,7 +73,7 @@ public class ViewActivity extends AppCompatActivity {
         @Override
         public Fragment getItem(int position) {
 
-            return ViewFragment.getNewInstance(objects_url.get(position).getUrl());
+            return SlideFragment.getNewInstance(objects_url.get(position).getUrl());
         }
 
         @Override

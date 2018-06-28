@@ -12,7 +12,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
-        android:name=".model.RootApplication"
+        android:name=".RootApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -22,7 +22,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAhE0ZRmeUQoXYFp9Bfu8WVc0y9vxsFQ8c" />
 
-        <activity android:name=".views.MainActivity">
+        <activity android:name=".ui.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,10 +30,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".views.ViewActivity"
+            android:name=".ui.slide.SlideActivity"
             android:label="@string/view_activity_label" />
         <activity
-            android:name=".views.MapActivity"
+            android:name=".ui.map.MapActivity"
             android:label="@string/map_activity_label" />
     </application>
 
